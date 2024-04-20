@@ -4,27 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Blog FrontEnd</title>
 
-    <!--GOOGLE FONTS-->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!--TIPOGRAFÍA-->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,
-            100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;
-            1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!--FIN TIPOGRAFÍA-->
-    <!--FIN GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--Fin Boostrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Header Section -->
     <header class="header">
         <div class="container">
             <div class="row align-items-center justify-content-left">
@@ -39,32 +35,34 @@
         </div>
     </header>
 
+    <hr>
 
-
+    <!-- Main Content Section -->
     <main class="container">
 
-        <!-- Main section for posts -->
+        <!-- Posts Section PRINCIPAL -->
         <section class="row mt-4 gx-4">
-            <h2>Novedades</h2>
+            <h2 class="col-12">Novedades</h2>
             <!-- Primary Post Example -->
             <article class="col-lg-8 mb-4">
-                <div class="card h-100">
-                    <img src="assets/img/posts/bootstrap.png" class="card-img-top" alt="Bootstrap" />
-                    <div class="card-body">
-                        <h5 class="card-title">Modifica el tema de Bootstrap con variables CSS</h5>
-                        <p class="card-text"><small class="text-muted">24 Noviembre, 2022</small></p>
-                        <div class="d-flex align-items-center">
-                            <img src="assets/img/logos/adl.png" class="rounded-circle me-2" alt="Desafío Latam"
-                                style="width: 30px; height: 30px;">
-                            <span class="small">Desafío Latam</span>
+                
+                    <div class="card h-100">
+                        <img src="assets/img/posts/bootstrap.png" class="card-img-top" alt="Bootstrap" />
+                        <div class="card-body">
+                            <h5 class="card-title">Modifica el tema de Bootstrap con variables CSS</h5>
+                            <p class="card-text"><small class="text-muted">24 Noviembre, 2022</small></p>
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/logos/adl.png" class="rounded-circle me-2" alt="Desafío Latam"
+                                    style="width: 30px; height: 30px;">
+                                <span class="small">Desafío Latam</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                
             </article>
 
-
-            <!-- Smaller posts section -->
-            <div class="col-lg-4 mb-4">
+            <!-- Smaller Posts Section -->
+            <div class="col-lg-4">
                 <!-- Smaller post example -->
                 <article class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
@@ -90,7 +88,7 @@
                 <article class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="assets/img/posts/Herencia-JS.png" class="card-img-top" alt="Herencia JS" />
+                            <img src="assets/img/posts/Etiquetas-semánticas-HTML.png" class="card-img-top" alt="Herencia JS" />
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -110,7 +108,7 @@
                 <article class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="assets/img/posts/Herencia-JS.png" class="card-img-top" alt="Herencia JS" />
+                            <img src="assets/img/posts/reactComponents.png" class="card-img-top" alt="Herencia JS" />
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -126,26 +124,17 @@
 
 
                 </article>
-
             </div>
-
-
-
         </section>
-
-
-
-
-
-
-
-        <!--SECCION 2 popular 1-->
+        <hr>
+        <!-- Popular Section -->
         <section class="row mt-4 gx-4">
-            <h2 class="categorias__titulo">Popular</h2>
+            <h2 class="col-12 categorias__titulo">Popular</h2>
+            <!-- Popular Post Cards -->
             <!-- tarjetas -->
             <article class="col-lg-3 mb-2">
                 <div class="card h-100">
-                    <img src="assets/img/posts/bootstrap.png" class="card-img-top" alt="Bootstrap" />
+                    <img src="assets/img/posts/vue-components.png" class="card-img-top" alt="Bootstrap" />
                     <div class="card-body">
                         <h5 class="card-title">Modifica el tema de Bootstrap con variables CSS</h5>
                         <p class="card-text"><small class="text-muted">24 Noviembre, 2022</small></p>
@@ -157,7 +146,7 @@
 
                     </div>
                     <div class="card h-100">
-                        <img src="assets/img/posts/bootstrap.png" class="card-img-top" alt="Bootstrap" />
+                        <img src="assets/img/posts/sass.jpg" class="card-img-top" alt="Bootstrap" />
                         <div class="card-body">
                             <h5 class="card-title">Modifica el tema de Bootstrap con variables CSS</h5>
                             <p class="card-text"><small class="text-muted">24 Noviembre, 2022</small></p>
@@ -169,10 +158,11 @@
                         </div>
                     </div>
             </article>
+            
             <!--SECCION 2 popular 2-->
             <article class="col-lg-3 mb-2">
                 <div class="card h-100">
-                    <img src="assets/img/posts/bootstrap.png" class="card-img-top" alt="Bootstrap" />
+                    <img src="assets/img/posts/api-js.png" class="card-img-top" alt="Bootstrap" />
                     <div class="card-body">
                         <h5 class="card-title">Modifica el tema de Bootstrap con variables CSS</h5>
                         <p class="card-text"><small class="text-muted">24 Noviembre, 2022</small></p>
@@ -196,15 +186,13 @@
                         </div>
                     </div>
             </article>
-
-            <!-- categorias -->
-
-            <article class="container col-lg-6 mb-4">
-                <h2 class="categorias__titulo">Categorías</h2>
+            <!-- Categories Section -->
+        <section class="col-lg-6 mb-2">
+            <h2 class="categorias__titulo">Categorías</h2>
                 <div class="categorias__lista ">
                     
                     <!-- HTML Category Card -->
-                    <div class="card categorias__item categorias__item--html mb-2 " style="background-color: #E93E30;">
+                    <div class="card categorias__item categorias__item--html mb-2 " style="background-color: #e34c26;">
                         <div class="row g-0 align-items-center">
                             <div class="col-2">
                                 <img src="assets/img/logos/html.png" class="categorias__icon img-fluid rounded-circle"
@@ -232,8 +220,6 @@
                             </div>
                         </div>
                     </div>
-    
-                    <!-- Other categories here -->
     
                     <!-- CSS Category Card -->
                     <div class="card categorias__item categorias__item--js mb-2" style="background-color: #299ED5;">
@@ -296,43 +282,38 @@
                     </div>
     
                 </div>
-            </article>
+
             
         </section>
-
-
-        <!--FIN PRINCIPAL-->
-
-
         </section>
 
-
+        
 
     </main>
-
+    <hr>
+    <!-- Footer Section -->
     <footer class="header">
         <div class="container">
             <div class="row align-items-center justify-content-left">
+                
                 <div class="col-auto">
                     <img src="assets/img/logos/adl.png" alt="ADL Logo" class="header__logo-img"
                         style="width: 30px; height: 30px; border-radius: 3px;">
                 </div>
-                <div class="col-auto">
+                <div class="col-auto ">
                     <h1 class="header__title m-0">Blog FrontEnd</h1>
                 </div>
                 <div class="col-auto">
-                    <p class="footer__text">© 2023 Blog FrontEnd - Desafío Latam</p>
+                    <p class="footer__text align-items-right">© 2023 Blog FrontEnd - Desafío Latam</p>
                 </div>
             </div>
         </div>
     </footer>
 
-
-    <!--SCRIPT BOOSTRAP-->
+    <!-- Bootstrap JavaScript Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <!--FIN BOOSTRAP-->
 
 </body>
 
