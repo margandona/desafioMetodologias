@@ -1,37 +1,97 @@
-/* Bloque Principal Posts */
-.posts {
+/* General Resets */
+* {
+    box-sizing: border-box;
+}
+
+body, h1, p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; /* Asegúrate de usar la misma fuente en todo el documento */
+}
+
+/* Header Styling */
+.header {
+    background-color: #F7E018; /* Color de fondo amarillo */
+    border: 2px solid #E93E30; /* Borde rosa */
+    padding: 10px 0; /* Espacio por encima y debajo del contenido del header */
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
 }
 
-/* Bloque Post */
-.post {
-    margin-bottom: 20px;
+.header__logo-img {
+    width: 50px; /* Anchura del logo */
+    height: auto; /* Mantiene la relación de aspecto del logo */
 }
-.post__image {
+
+.header__title {
+    color: #292C33; /* Color del texto oscuro */
+    font-weight: bold; /* Negrita para el título */
+    font-size: 24px; /* Tamaño del título */
+    margin-left: 10px; /* Espacio entre el logo y el título */
+}
+
+/* Post Styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-}
-.post__info {
-    margin-top: 10px;
+    border-bottom: 4px solid #563D7C; /* Adjust the color to match your design */
+    padding-top: 10px;
 }
 
-/* Bloque Small Post */
-.small-post {
-    margin-bottom: 15px;
-}
-.small-post__image {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-.small-post__info {
-    margin-top: 10px;
+.card-title {
+    font-size: 1rem; /* Adjust the size to match your design */
 }
 
-/* Footer styling */
+.card-text {
+    font-size: 0.875rem; /* Adjust the size to match your design */
+}
+
+.rounded-circle {
+    width: 30px;
+    height: 30px;
+}
+
+/* Footer Styling */
+/* ...Your previous footer styles... */
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .col-lg-4 {
+        max-width: 100%;
+    }
+    .col-lg-8, .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .header__logo-img {
+        width: 40px; /* Tamaño del logo en móviles */
+        margin-bottom: 10px; /* Espacio entre el logo y el título */
+    }
+    
+    .header__title {
+        font-size: 20px; /* Tamaño del título para móviles */
+        text-align: center; /* Alineación del título */
+    }
+}
+
+/* Footer Styling */
 .footer {
     background-color: #292C33;
     color: white;
@@ -39,14 +99,7 @@
     text-align: center;
 }
 
-.header__logo, .footer__logo {
+.footer__logo {
     width: 50px;
     height: 50px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .header, .footer {
-        text-align: center;
-    }
 }
