@@ -1,0 +1,52 @@
+/* Bloque Principal Posts */
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Bloque Post */
+.post {
+    margin-bottom: 20px;
+}
+.post__image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.post__info {
+    margin-top: 10px;
+}
+
+/* Bloque Small Post */
+.small-post {
+    margin-bottom: 15px;
+}
+.small-post__image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.small-post__info {
+    margin-top: 10px;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #292C33;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header__logo, .footer__logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header, .footer {
+        text-align: center;
+    }
+}
