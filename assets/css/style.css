@@ -9,11 +9,14 @@ body, h1, p {
     padding: 0;
     font-family: 'Poppins', sans-serif; /* Asegúrate de usar la misma fuente en todo el documento */
 }
-
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 /* Header Styling */
 .header {
     background-color: #F7E018; /* Color de fondo amarillo */
-    border: 2px solid #E93E30; /* Borde rosa */
+    border: 2px solid #E93E30; /* Borde rojo */
     padding: 10px 0; /* Espacio por encima y debajo del contenido del header */
     display: flex;
     justify-content: center; /* Centra horizontalmente el contenido */
@@ -103,3 +106,82 @@ body, h1, p {
     width: 50px;
     height: 50px;
 }
+.categorias__titulo {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.categorias__lista {
+    /* Additional styling for list of categories */
+}
+
+.categorias__item {
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.categorias__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Specific styles for each category */
+.categorias__item--html {
+    background-color: #e34c26;
+    color: white;
+}
+
+.categorias__item--js .card-body {
+    background-color: #f0db4f;
+    color: black;
+}
+
+.categorias__item--css .card-body {
+    background-color: #299ED5;
+    color: white;
+}
+
+.categorias__item--react .card-body {
+    background-color: #292C33;
+    color: white;
+}
+
+.categorias__item--vue .card-body {
+    background-color: #67C770;
+    color: white;
+}
+
+.categorias__item--bootstrap .card-body {
+    background-color: #563D7C;
+    color: white;
+}
+
+/* To ensure the category title is displayed correctly */
+.categorias__title {
+    font-size: 1rem;
+    margin: 0;
+    padding-left: 0.5rem; /* Adjust as needed */
+}
+
+/* Remove the border from cards */
+.card {
+    border: none;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure proper alignment and padding inside the card */
+.card-body {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem; /* Adjust as needed */
+}
+
+  
+
+  
